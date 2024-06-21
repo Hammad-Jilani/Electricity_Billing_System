@@ -9,7 +9,7 @@ public class Connect extends JFrame {
     public Connect(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql:///Electricity_Bill_Management","root","Hammad@10");
+            c = DriverManager.getConnection("jdbc:mysql:///Electricity_Bill_Management","root","password");
             s = c.createStatement();
         } catch (Exception e) {
             e.printStackTrace();
